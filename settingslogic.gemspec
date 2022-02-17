@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = "settingslogic"
-  s.version     = "2.0.9"
+  s.version     = "2.0.10"
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Ben Johnson"]
   s.email       = ["bjohnson@binarylogic.com"]
@@ -11,6 +11,7 @@ Gem::Specification.new do |s|
   s.summary     = %q{A simple and straightforward settings solution that uses an ERB enabled YAML file and a singleton design pattern.}
   s.description = %q{A simple and straightforward settings solution that uses an ERB enabled YAML file and a singleton design pattern.}
 
+  s.add_dependency 'psych', '3.1.0'
   s.add_development_dependency 'rake'
   s.add_development_dependency 'rspec'
 
